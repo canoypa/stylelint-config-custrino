@@ -1,0 +1,22 @@
+{
+  "name": "stylelint-config-custrino",
+  "description": "StyleLint shareable settings",
+  "version": "1.0.0",
+  "author": "cano",
+  "repository": "canoypa/stylelint-config-custrino",
+  "license": "MIT",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "stylelint",
+    "stylelint-config",
+    "code style",
+    "strict",
+    "lint"
+  ],
+  "peerDependencies": {
+    "stylelint": "^13.2.1"
+  }
+}
