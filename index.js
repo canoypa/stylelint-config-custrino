@@ -98,7 +98,7 @@ module.exports = {
       "always",
       {
         except: ["first-nested"],
-        gnore: ["after-comment", "stylelint-commands"]
+        ignore: ["after-comment", "stylelint-commands"]
       }
     ], // コメント前に空行
     "comment-whitespace-inside": "always", // コメント内にスペース
