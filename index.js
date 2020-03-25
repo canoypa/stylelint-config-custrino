@@ -1,6 +1,7 @@
 // Todo: 整理, scss とか対応
 
 module.exports = {
+  plugins: ["stylelint-scss"],
   rules: {
     "color-no-invalid-hex": true, // 無効な色コード
     "function-calc-no-invalid": true, // 無効な calc 式
@@ -22,13 +23,13 @@ module.exports = {
     "unit-case": "lower", // 単位に小文字を使用
     "value-keyword-case": "lower", // キーワードに小文字を使用
     "no-unknown-animations": true, // 存在しないアニメーション名
-    "unit-no-unknown": true, // 不明なユニットなし
-    "property-no-unknown": true, // 不明なプロパティなし
+    // "unit-no-unknown": true, // 不明なユニットなし
+    // "property-no-unknown": true, // 不明なプロパティなし
+    // "at-rule-no-unknown": true, // 不明な @ ルールなし
     "selector-pseudo-class-no-unknown": true, // 不明な擬似クラスなし
     "selector-pseudo-element-no-unknown": true, // 不明な疑似要素なし
     "selector-type-no-unknown": true, // 不明な要素なし
     "media-feature-name-no-unknown": true, // 不明なメディアクエリなし
-    "at-rule-no-unknown": true, // 不明な @ ルールなし
     "declaration-block-no-duplicate-properties": true, // 重複するプロパティ
     "declaration-block-no-shorthand-property-overrides": true, // 省略プロパティで上書きなし
     "block-no-empty": true, // 空のブロックなし
@@ -83,8 +84,8 @@ module.exports = {
     "media-feature-colon-space-before": "never", // メディアクエリコンマの前のスペースなし
     "media-feature-colon-space-after": "always", // メディアクエリコロンの後のスペース
     "media-feature-parentheses-space-inside": "never", // メディア括弧内のスペースなし
-    "media-feature-range-operator-space-before": "never", // メディアクエリ比較前のスペースなし
-    "media-feature-range-operator-space-aftor": "never", // メディアクエリ比較後のスペースなし
+    // "media-feature-range-operator-space-before": "never", // メディアクエリ比較前のスペースなし
+    // "media-feature-range-operator-space-aftor": "never", // メディアクエリ比較後のスペースなし
     "media-query-list-comma-newline-before": "never-multi-line", // メディアクエリリストカンマ前の改行なし
     "media-query-list-comma-newline-after": "always-multi-line", // メディアクエリリストカンマ後に改行
     "media-query-list-comma-space-before": "never", // メディアクエリリストコンマ前のスペースなし
@@ -102,7 +103,18 @@ module.exports = {
       }
     ], // コメント前に空行
     "comment-whitespace-inside": "always", // コメント内にスペース
-    "max-empty-lines": 1 // 最大空行
+    "max-empty-lines": 1, // 最大空行
+
+    // scss
+    "scss/double-slash-comment-empty-line-before": [
+      "always",
+      {
+        except: ["first-nested"],
+        ignore: ["between-comments", "stylelint-commands"]
+      }
+    ], // // コメントの前に空行
+    "scss/double-slash-comment-whitespace-inside": "always" // // コメント内にスペース
+
     // color-named: never,  # 名前付き色なし
   }
 };
