@@ -33,7 +33,13 @@ module.exports = {
     "number-no-trailing-zeros": true, // 末端の 0 なし
     "length-zero-no-unit": true, // 0 の単位なし
     "rule-empty-line-before": ["always", { except: ["first-nested"] }], // ルール間に改行が必要
-    "at-rule-empty-line-before": ["always", { except: ["first-nested"] }], // @ ルール前に改行
+    "at-rule-empty-line-before": [
+      "always",
+      {
+        except: ["first-nested"],
+        ignore: ["after-comment", "blockless-after-blockless"]
+      }
+    ], // @ ルール前に改行
 
     "selector-type-case": "lower", // セレクタに小文字を使用
     "selector-pseudo-class-case": "lower", // 疑似クラスに小文字を使用
