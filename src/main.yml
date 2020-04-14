@@ -1,2 +1,2 @@
-extends: ./rules/base
+extends: [./rules/base, ./rules/scss]
 plugins: ["stylelint-scss"]
