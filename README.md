@@ -5,7 +5,7 @@ Strict StyleLint shareable configurations.
 ## Installation
 
 ```shell
-npm install --save-dev stylelint-config-custrino
+yarn add --dev stylelint-config-custrino
 ```
 
 ## Usage
