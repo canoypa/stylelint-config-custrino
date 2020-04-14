@@ -107,14 +107,6 @@ rules:
       },
     ] # コメント前に空行
   comment-whitespace-inside: always # コメント内にスペース
-  scss/double-slash-comment-empty-line-before: [
-      "always",
-      {
-        except: ["first-nested"],
-        ignore: ["between-comments", "stylelint-commands"],
-      },
-    ] # // コメントの前に空行
-  scss/double-slash-comment-whitespace-inside: "always" # // コメント内にスペース
 
   # scss とかと重複しそう できれば対応
   # "unit-no-unknown": true, // 不明なユニットなし
