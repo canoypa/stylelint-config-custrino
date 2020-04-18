@@ -50,10 +50,10 @@ rules:
   selector-descendant-combinator-no-non-space: true # セレクタ後の複数スペース、改行なし
   selector-combinator-space-before: always # セレクタ接続演算子前にスペース
   selector-combinator-space-after: always # セレクタ接続演算子後にスペース
+  selector-list-comma-space-before: never # セレクタリストコンマの前のスペースなし
   selector-list-comma-newline-before: never-multi-line # セレクタリストコンマの前の改行なし
   selector-list-comma-newline-after: always # セレクタリストコンマの後に改行
-  selector-list-comma-space-before: never # セレクタリストコンマの前のスペースなし
-  selector-no-qualifying-type: [true, { ignore: "attribute" }] # セレクタの修飾なし
+  selector-no-qualifying-type: [true, { ignore: "attribute" }] # 要素セレクタの修飾なし
   selector-attribute-brackets-space-inside: never # セレクタブランケット内のスペースなし
   selector-attribute-operator-space-before: never # 属性セレクタ内演算子前のスペースなし
   selector-attribute-operator-space-after: never # 属性セレクタ内演算子後のスペースなし
@@ -61,16 +61,16 @@ rules:
   selector-pseudo-element-colon-notation: double # 疑似要素にダブルコロンを使用
 
   block-closing-brace-empty-line-before: never # ブロック末端の空行なし
-  block-opening-brace-space-before: always # ブロック開始ブレース前にスペース
   block-opening-brace-newline-after: always # ブロック開始ブレース後に改行
   block-closing-brace-newline-before: always # ブロック終了ブレース前に改行
+  block-opening-brace-space-before: always # ブロック開始ブレース前にスペース
 
-  declaration-colon-newline-after: always-multi-line # 複数行宣言ではコロン後に改行
-  declaration-colon-space-before: never # コロン前のスペースなし
-  declaration-colon-space-after: always-single-line # コロン後にスペース
+  declaration-colon-newline-after: always-multi-line # 複数行宣言では値毎に改行
   declaration-block-semicolon-newline-before: never-multi-line # セミコロン前の改行なし
   declaration-block-semicolon-newline-after: always # 宣言毎に改行 (セミコロン後に改行
   declaration-block-trailing-semicolon: always # 最後の宣言にセミコロン
+  declaration-colon-space-before: never # コロン前のスペースなし
+  declaration-colon-space-after: always-single-line # コロン後にスペース
 
   value-list-comma-newline-before: never-multi-line # 複数行値リストコンマ前の改行なし
   value-list-comma-newline-after: always-multi-line # 複数行値リストコンマ後に改行
@@ -83,18 +83,18 @@ rules:
   function-comma-space-before: never # 関数コンマ前のスペースなし
   function-comma-space-after: always # 関数コンマ後のスペースあり
 
-  media-feature-parentheses-space-inside: never # メディア括弧内のスペースなし
-  media-feature-colon-space-before: never # メディアクエリコンマの前のスペースなし
-  media-feature-colon-space-after: always # メディアクエリコロンの後のスペース
   media-query-list-comma-newline-before: never-multi-line # メディアクエリリストカンマ前の改行なし
   media-query-list-comma-newline-after: always-multi-line # 複数行メディアクエリリストカンマ後に改行
   media-query-list-comma-space-before: never # メディアクエリリストコンマ前のスペースなし
   media-query-list-comma-space-after: always # メディアクエリリストコンマ後にスペース
+  media-feature-parentheses-space-inside: never # メディア括弧内のスペースなし
+  media-feature-colon-space-before: never # メディアクエリコンマの前のスペースなし
+  media-feature-colon-space-after: always # メディアクエリコロンの後のスペース
 
-  at-rule-name-space-after: always-single-line # @ ルール名語にスペース
-  at-rule-semicolon-space-before: never # @ ルールセミコロン前のスペースなし
   at-rule-semicolon-newline-after: always # @ ルールセミコロン後に改行
   at-rule-name-newline-after: always-multi-line # 複数行 @ ルール名後に改行
+  at-rule-name-space-after: always-single-line # @ ルール名語にスペース
+  at-rule-semicolon-space-before: never # @ ルールセミコロン前のスペースなし
 
   comment-whitespace-inside: [always, { severity: warning }] # コメント内にスペース
 
