@@ -1,2 +1,2 @@
 rules:
-  scss/double-slash-comment-whitespace-inside: "always" # コメント内にスペース
+  scss/double-slash-comment-whitespace-inside: [always, { severity: warning }] # コメント内にスペース

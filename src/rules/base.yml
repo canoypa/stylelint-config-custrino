@@ -99,7 +99,7 @@ rules:
   at-rule-semicolon-newline-after: always # @ ルールセミコロン後に改行
   at-rule-name-newline-after: always-multi-line # 複数行 @ ルール名後に改行
 
-  comment-whitespace-inside: always # コメント内にスペース
+  comment-whitespace-inside: [always, { severity: warning }] # コメント内にスペース
 
   # scss とかと重複しそう できれば対応
   # "unit-no-unknown": true, // 不明なユニットなし
