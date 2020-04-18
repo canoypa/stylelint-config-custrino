@@ -8,7 +8,7 @@ rules:
   # エラー元
   no-unknown-animations: true # 存在しないアニメーション名
   declaration-block-no-shorthand-property-overrides: true # 省略プロパティで上書きなし
-  no-duplicate-selectors: [true, { severity: "warning" }] # 重複するセレクタ
+  no-duplicate-selectors: true # 重複するセレクタ
 
   # どうにか
   no-descending-specificity: true # 高レベルセレクタの後の低レベルセレクタなし
