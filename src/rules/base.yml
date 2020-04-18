@@ -9,13 +9,13 @@ rules:
   no-unknown-animations: true # 存在しないアニメーション名
   declaration-block-no-shorthand-property-overrides: true # 省略プロパティで上書きなし
   no-duplicate-selectors: true # 重複するセレクタ
-
-  # どうにか
   no-descending-specificity: true # 高レベルセレクタの後の低レベルセレクタなし
   declaration-no-important: true # !important なし
   declaration-block-no-duplicate-properties: true # 重複するプロパティ
   no-duplicate-at-import-rules: true # 重複するインポートなし
   font-family-no-duplicate-names: true # 重複するフォント指定
+
+  # どうにか
   block-no-empty: true # 空のブロックなし
   comment-no-empty: true # 空のコメントなし
 
