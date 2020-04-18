@@ -28,12 +28,12 @@ rules:
   number-leading-zero: always # 少数先行の 0. を要求
   number-no-trailing-zeros: true # 末端の 0 なし
   length-zero-no-unit: true # 0 の単位なし
-  rule-empty-line-before: ["always", { except: ["first-nested"] }] # ルール間に改行が必要
+  rule-empty-line-before: [always, { except: [first-nested] }] # ルール間に改行が必要
   at-rule-empty-line-before: [
-      "always",
+      always,
       {
-        except: ["first-nested"],
-        ignore: ["after-comment", "blockless-after-blockless"],
+        except: [first-nested],
+        ignore: [after-comment, blockless-after-blockless],
       },
     ] # @ ルール前に改行
 
@@ -53,7 +53,7 @@ rules:
   selector-list-comma-space-before: never # セレクタリストコンマの前のスペースなし
   selector-list-comma-newline-before: never-multi-line # セレクタリストコンマの前の改行なし
   selector-list-comma-newline-after: always # セレクタリストコンマの後に改行
-  selector-no-qualifying-type: [true, { ignore: "attribute" }] # 要素セレクタの修飾なし
+  selector-no-qualifying-type: [true, { ignore: attribute }] # 要素セレクタの修飾なし
   selector-attribute-brackets-space-inside: never # セレクタブランケット内のスペースなし
   selector-attribute-operator-space-before: never # 属性セレクタ内演算子前のスペースなし
   selector-attribute-operator-space-after: never # 属性セレクタ内演算子後のスペースなし
