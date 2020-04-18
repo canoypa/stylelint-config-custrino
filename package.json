@@ -1,7 +1,7 @@
 {
   "name": "stylelint-config-custrino",
   "description": "StyleLint shareable settings",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "license": "MIT",
   "author": "cano",
   "repository": "canoypa/stylelint-config-custrino",
