@@ -15,13 +15,11 @@ rules:
   no-duplicate-at-import-rules: true # 重複するインポートなし
   declaration-block-no-shorthand-property-overrides: true # 省略プロパティで上書きなし
 
-  # どうにか
-  block-no-empty: true # 空のブロックなし
-  comment-no-empty: true # 空のコメントなし
-
   # スタイル
   string-quotes: double # ダブルクオートを使用
   no-extra-semicolons: true # 不要なセミコロン
+  block-no-empty: true # 空のブロックなし
+  comment-no-empty: true # 空のコメントなし
   max-empty-lines: 1 # 最大空行
   selector-max-empty-lines: 0 # セレクタ内の空行なし
   value-list-max-empty-lines: 0 # 値リストの空行なし
