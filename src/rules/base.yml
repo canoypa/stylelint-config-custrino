@@ -64,7 +64,6 @@ rules:
   block-opening-brace-space-before: always # ブロック開始ブレース前にスペース
   block-opening-brace-newline-after: always # ブロック開始ブレース後に改行
   block-closing-brace-newline-before: always # ブロック終了ブレース前に改行
-  block-closing-brace-newline-after: always # ブロック終了ブレース後に改行
 
   declaration-colon-newline-after: always-multi-line # 複数行宣言ではコロン後に改行
   declaration-colon-space-before: never # コロン前のスペースなし
