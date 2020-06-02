@@ -10,7 +10,8 @@
   },
   "main": "main.js",
   "files": [
-    "rules"
+    "rules",
+    "main.js"
   ],
   "keywords": [
     "stylelint",
