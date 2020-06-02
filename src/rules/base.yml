@@ -112,8 +112,6 @@ rules:
   at-rule-name-space-after: [always-single-line, { severity: warning }] # @ ルール名語にスペース
   at-rule-semicolon-space-before: [never, { severity: warning }] # @ ルールセミコロン前のスペースなし
 
-  comment-whitespace-inside: [always, { severity: warning }] # コメント内にスペース
-
   # scss とかと重複しそう できれば対応
   # "unit-no-unknown": true, // 不明なユニットなし
   # "property-no-unknown": true, // 不明なプロパティなし
