@@ -1,1 +1,0 @@
-module.exports={rules:{"scss/double-slash-comment-whitespace-inside":["always",{severity:"warning"}]}};
