@@ -1,6 +1,6 @@
 node_modules
 
-/rules/
-/main.js
+# Build files
+*.js
 
 tests/
