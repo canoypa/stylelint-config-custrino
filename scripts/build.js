@@ -1,14 +1,14 @@
 const yaml = require("js-yaml");
 const fs = require("fs");
 const path = require("path");
-const UglifyJS = require("uglify-es");
+const terser = require("terser");
 
 const src = "src";
 
 const build = (outputPath, filePath) => {
   const file = fs.readFileSync(filePath);
 
-  const doc = UglifyJS.minify(
+  const doc = terser.minify(
     `module.exports=${JSON.stringify(yaml.safeLoad(file))}`
   ).code;
   fs.writeFileSync(outputPath, doc);
