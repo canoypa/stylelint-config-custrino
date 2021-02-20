@@ -1,22 +1,39 @@
 # StyleLint Config Custrino
 
-Strict StyleLint shareable configurations.
+A personally created StyleLint shareable configuration set.
 
 ## Installation
 
 ```shell
-yarn add --dev stylelint-config-custrino
+$ npm install --save-dev stylelint-config-custrino
 ```
 
 ## Usage
 
-Used by specifying `extend` in StyleLint configuration file.
+Used by specifying in the `extends` section of the StyleLint configuration.
 
-```js
+```jsonc
 {
-  "extends": "stylelint-config-custrino",
-  "rules": {
-    // Additional, per-project rules ...
-  }
+  "extends": ["stylelint-config-custrino", "stylelint-config-custrino/xxxx"]
 }
 ```
+
+### Additional configurations
+
+Additional configurations can be used depending on the project.
+
+You need to add a corresponding plugin.
+
+#### `stylelint-config-custrino/scss`
+
+This configuration enables the rules for SCSS.
+
+Add required plugins:
+
+```shell
+$ npm install --save-dev stylelint-scss
+```
+
+#### `stylelint-config-custrino/css-in-js`
+
+This configuration enables the rules for CSS in JS.
