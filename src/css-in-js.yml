@@ -1,0 +1,8 @@
+rules:
+  media-feature-name-case: null # ?
+  value-keyword-case: null # 値に大文字を使用可
+  selector-list-comma-newline-after: [
+      "always-multi-line",
+      { severity: warning },
+    ] # セレクタ間のコンマ
+
