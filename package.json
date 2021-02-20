@@ -20,15 +20,13 @@
     "strict",
     "lint"
   ],
-  "dependencies": {
-    "stylelint-scss": "^3.16.0"
-  },
   "devDependencies": {
     "js-yaml": "^3.13.1",
     "stylelint": "^13.3.2",
     "uglify-es": "^3.3.9"
   },
   "peerDependencies": {
-    "stylelint": "^13.2.1"
+    "stylelint": "^13.0.0",
+    "stylelint-scss": "^3.0.0"
   }
 }
