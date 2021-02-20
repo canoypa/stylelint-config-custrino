@@ -8,10 +8,11 @@ const src = "src";
 const build = (outputPath, filePath) => {
   const file = fs.readFileSync(filePath);
 
-  const doc = terser.minify(
-    `module.exports=${JSON.stringify(yaml.safeLoad(file))}`
-  ).code;
-  fs.writeFileSync(outputPath, doc);
+  terser
+    .minify(`module.exports=${JSON.stringify(yaml.load(file))}`)
+    .then(({ code }) => {
+      fs.writeFileSync(outputPath, code);
+    });
 };
 
 const foo = (dir, root = "") => {
